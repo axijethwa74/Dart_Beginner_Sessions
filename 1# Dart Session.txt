@@ -1,0 +1,185 @@
+void main() {
+ 
+
+  Bool Variable Practice: 
+  
+  First : 
+    bool expression=true;
+  
+  if(expression == true ){
+    print("True ${expression.runtimeType}");
+    
+  }
+  else{
+    print("False");
+  }
+  
+    bool test; 
+   test = 12 > 5; 
+   print(test); 
+  
+      bool str = true; 
+      if(str==false) { 
+       print('Variable is Empty'); 
+          } else { 
+       print('variable is not Empty'); 
+            } 
+  
+  Second: 
+   bool isItRaining = true;
+   bool isItSunny = false;
+  
+  if(isItRaining == true){
+    print("Today is Raining.");
+  }
+  else{
+    print(isItSunny);
+  }
+  
+  
+  
+  Double Variable Practice : 
+  
+    First :
+  double price= 5.0;
+  print("Total price is = ${price}");
+  
+  
+   Second :
+  
+  int two = 2;
+  int four = 4;
+
+  double fiveDouble = 5.1;
+  double sixDouble = 6.1;
+
+  int mul = two * four;
+  
+  double add = fiveDouble + sixDouble;
+  double sub = sixDouble - fiveDouble;
+  double div = four/two;
+
+  print("Multiplying two with four = $mul ");
+  print("Adding fiveDouble with sixDouble = $add");
+  print("Subtract fiveDouble from sixDouble = $sub");
+  print("Divide four by two = $div");
+  
+  
+    Third :
+  
+   double pi = 3.14; 
+   double area = pi*12*12; 
+   print("The output is ${area}"); 
+   double square= 2; 
+   double squarearea= 2*2;
+   print("The Output is ${squarearea}");
+  
+ 
+  String Variable Practice: 
+  
+  First: 
+  
+  String name ='Yougesh Jethwa\n'; 
+  String Address= 'Pakistan, Karachi\n'; 
+  String profession="Software Engineer\n";
+  String passionate="Mobile Application Programming.\n";
+  String StreetLine= "B#230 near mehmoodabad DHA Phase 1.";
+  print(name+Address+profession+passionate+StreetLine);
+  
+  
+  Second: 
+  
+   String str1 = "hello\n"; 
+   String str2 = "world"; 
+   String res = str1+str2; 
+   
+   print("The concatenated string : ${res}"); 
+  
+  
+  Third: 
+  
+   int n=1+1; 
+   
+   String str1 = "The sum of 1 and 1 is ${n}"; 
+   print(str1); 
+   
+   String str2 = "The sum of 2 and 2 is ${2+2}"; 
+   print(str2); 
+  
+  
+  
+  Conversion --> String to int : 
+  
+  String phoneno= "03012883457";
+  print(double.parse(phoneno));
+  
+  String Postcode = "7255";
+  print(int.parse(Postcode));
+  
+  String marks= "1000";
+  print(marks);
+  
+  
+   Conversion --> int to String :
+  
+  int name= 131;
+  print(name.toString().runtimeType);
+  
+   Conversion --> String to double :  
+   String number = "4";
+   print(double.parse(number));
+  
+  String val = "1.8";
+  double result = double.parse(val);
+  print(result);
+  
+  Conversion --> double to int: 
+  
+   int x = 10;
+  double a = x.toDouble();
+  print(a);
+  
+  Example:
+
+  double x = 2.8;
+ 
+  int a = x.toInt();
+  int b = x.truncate();
+  int c = x.round();
+  int d = x.ceil();
+ 
+ 
+  print(a); // 2
+  print(b); // 2
+  print(c); // 3
+  print(d); // 3
+  
+   Var keyword Understanding : 
+  var undetect= 20.4; 
+  print(undetect.runtimeType);
+  
+     Constant Keyword & Final Keyword : 
+  
+  const var1 = 32;   
+  print(var1); 
+       
+  // Assigning value to var2 
+  // variable with datatype 
+  const String var2 = "GeeksForGeeks but with const";   
+  print(var2); 
+  
+  
+
+  
+  
+ 
+  
+  
+  
+
+  
+  
+  
+  
+  
+}
