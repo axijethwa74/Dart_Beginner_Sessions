@@ -171,7 +171,97 @@ void main() {
   
 
   
+
+
+
+
+
+
+
+
+
+
+ //Ending Examples : 
+
+  int TotalMarks = 400;
+  int urdu = 50;
+  int maths = 50;
+  int english = 75;
+  int accounts = 75;
+  int gainmark = (urdu + maths + english + accounts);
   
+  print ("My Total Marks Gain ; ${urdu + maths + english + accounts}");
+  print ("Total Marks ; ${TotalMarks}");
+  
+  num percentage = (gainmark/TotalMarks * 100);
+  print ("my percentage is ; ${percentage}%");
+  
+  if(percentage >= 90) {
+    print ("Grade A+");
+  }
+ else if (percentage >= 80){
+   print ("Grade A");
+ }
+ else if (percentage >= 50){
+   print ("Grade B");
+ }
+  else {
+    print ("FAIL");
+  }
+  
+
+
+
+
+
+
+//Ending example 2: 
+
+import 'dart:io';
+void main(){
+
+  int totalmarks;
+  
+  
+  
+ print("______MarkSheet______");
+  
+    print("Enter your Total Marks");
+    int TotalMarks = int.parse(stdin.readLineSync());
+  
+   print("Enter your urdu marks");
+   int urdu = int.parse(stdin.readLineSync());
+
+   print("Enter your math marks");
+   int maths = int.parse(stdin.readLineSync());
+
+   print("Enter your english marks");
+   int english = int.parse(stdin.readLineSync());
+
+   int marks=urdu+maths+english;
+  
+      
+  print ("My Total Marks Gain ; ${urdu + maths + 
+  english}");
+  print ("Total Marks ; ${TotalMarks}");
+   num percentage = (marks/TotalMarks * 100);
+  print ("my percentage is ; ${percentage}%");
+
+   if(percentage >= 90) {
+    print ("Grade A+");
+  }
+ else if (percentage >= 80){
+   print ("Grade A");
+ }
+ else if (percentage >= 50){
+   print ("Grade B");
+ }
+  else {
+    print ("FAIL");
+  }
+  
+  
+}
  
   
   
