@@ -1,0 +1,207 @@
+While Loop : Example # 1
+
+int a=1; 
+  
+  while(a <= 30){
+    print(a);
+    a=a+1;;
+  }
+
+//......................///
+
+
+Example 2 While Loop Factorial: 
+
+ var num = 5; 
+ var factorial = 1; 
+   
+   while(num >=1) { 
+      factorial = factorial * num; 
+      num--; 
+   } 
+   print("The factorial  is ${factorial}"); 
+
+//..........................//
+
+
+Do While Loop : Example 1 
+
+
+int i=1; 
+
+  do{
+    print("Hello World");
+    i++; 
+  }while(i<5);
+
+
+//........................//
+
+Example # 2 : 
+
+var n = 10; 
+   do { 
+      print(n); 
+      n--; 
+   }
+   while(n>=0); 
+
+
+//.......................//
+
+
+int number = 0;
+  do {
+    if (number % 2 == 0) {
+      print(number);
+    }
+      number++;
+  } while (number < 10);
+
+
+//.......................//
+
+
+Example # 3 .....for...in Loop 
+
+
+var list1 = [10,20,30,40,50];  
+    var sum = 0;  
+   print("Dart for..in loop Example");  
+   for(var i in list1) { 
+       sum = i+ sum;           
+}  
+print("The sum is : ${sum}");  
+
+//..............//
+
+
+Example # 2...
+
+
+  var obj = [12,13,14]; 
+   
+   for (var prop in obj) { 
+      print(prop); 
+   }  
+
+
+
+
+
+
+
+
+
+
+Switch case : Example dart 
+
+ var dayOfWeek = 4;
+   
+    print("W3Adda - Dart Switch Case statement.");
+   
+    switch(dayOfWeek){
+    case 1:{
+    print("Today is Monday.");
+    }
+    break;
+    case 2:
+    print("Today is Tuesday.");
+    break;
+    case 3:{
+    print("Today is Wednesday.");
+    }
+    break;
+    case 4:{
+    print("Today is Thursday.");	
+    }
+    break;
+    case 5:{
+    print("Today is Friday.");  
+    }
+    break;
+    case 6:{
+    print("Today is Saturday.");  
+    }
+    break;
+    case 7:{
+    print("Today is Sunday.");  
+    }
+    break;
+    default:{
+    print("Invalid Weekday."); 
+    }
+    break;
+    }
+
+
+
+
+//..........................//
+  Example # 2: 
+
+  print( ' Enter the Marks ( 100 / 80 / 60 / 40 / 20 / 0 ) : ' ) ;
+  int? n = int.parse(stdin.readLineSync( ) ! ) ;
+
+
+  // switch case statement
+  switch( n )
+  {
+    case 100 : print( ' Grades are : A+ ' ) ;
+              break ;
+    case 80 : print( ' Grades are : B+ ' ) ;
+              break ;
+    case 60 : print( ' Grades are : C+ ' ) ;
+              break ;
+    case 40 : print( ' Grades are : D+ ' ) ;
+              break ;
+    case 20 : print( ' Grades are : E+ ' ) ;
+              break ;
+    case 0 : print( ' Fail ' ) ;
+              break ;
+  }
+
+
+
+//..........................//
+
+
+
+Last Example Calculator in switch case : 
+
+  print( ' Enter the number : ' ) ;
+  var firstnum = int.parse(stdin.readLineSync( ) as String ) ;
+
+
+   
+  print( ' Enter the number : ' ) ;
+  var secondnum = int.parse(stdin.readLineSync( ) as String ) ;
+
+   print("Enter your action");
+   var action = int.parse(stdin.readLineSync()as String );
+
+  
+  switch(action )
+  {
+    case 1 : action = firstnum+secondnum; 
+             print(action);
+             break ;
+      
+    case 2 : action = firstnum*secondnum; 
+             print(action);
+             break ;
+    case 3 : double action = firstnum / secondnum; 
+             print(action);
+             break ;
+    case 4 :action = firstnum-secondnum; 
+             print(action);
+             break ;
+    case 5 : print( "Error 404" ) ;
+              break ;
+   
+  }
+
+
+
+
+//..........................//
