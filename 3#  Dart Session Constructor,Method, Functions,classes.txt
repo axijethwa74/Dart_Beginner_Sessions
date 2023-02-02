@@ -1,0 +1,219 @@
+OOPs Object Oriented Programming language :
+
+
+Funcation Structure : Example 
+
+return type  Funcationname(parameter){
+   //Statement
+   return value; 
+}
+
+
+
+
+Types of Funcations : 
+
+With Arguments no return Type : 
+
+void main( )
+{
+ fun(10,20); 
+  
+}
+
+void fun(int a, int b){ 
+  int c=a+b; 
+  print(c); 
+}
+
+
+No Arguments No Return Types : 
+
+void main( )
+{
+ fun(); 
+  
+}
+
+void fun(){ 
+  int a=5; 
+  int b=20; 
+  print(a+b); 
+}
+
+with Arguments no return type : 
+void main( )
+{
+ fun(10,20); 
+  
+}
+
+void fun(int a, b){ 
+  print(a+b); 
+}
+
+with arguments with return type : 
+
+ void main( )
+ {
+ print(fun(10,20)); 
+   
+ }
+
+  int fun(int a, int b){ 
+  int c=a+b; 
+  return c; 
+  }
+
+
+Example Of Funaction : 
+
+void main() { 
+   print(factorial(6));
+}  
+factorial(number) { 
+   if (number <= 0) {         
+      // termination case 
+      return 1; 
+   } else { 
+      return (number * factorial(number - 1));    
+      // function invokes itself 
+   } 
+}  
+
+
+
+///....................///
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Constructor Structure: Example 
+
+class_Keyword className{
+   Constructor_Name(){
+ //Statements... 
+}
+
+Named Constructor : Example 
+
+class_Keyword className{
+   className.constructorname(){
+    //Statement.....  
+}
+  } 
+
+
+
+
+Default Constructor : 
+var obj=School(); 
+  
+}
+
+class School{
+  School(){
+    print("Hello Constructor");
+  }
+
+//....................//
+
+void main( )
+{
+var obj=School(205); 
+  
+}
+
+class School{
+  School(var Student){
+    print("Constructor Called: Total Students  $Student");
+  }
+}
+
+//.................//
+
+void main() { 
+   Car c1 = new Car('E1001'); 
+}  
+class Car { 
+   String engine; 
+   Car(String engine) { 
+      this.engine = engine; 
+      print("The engine is : ${engine}"); 
+   } 
+} 
+
+//..............//
+
+
+
+
+Named Constructor: Example 1
+
+ var obj=School.StudentDetails("Yougesh",23,"Karachi,Pakistan"); 
+  var obj2=School.StudentDetails("Danish",26,"New York,London"); 
+ 
+}
+
+class School{
+  School.StudentDetails(var name,var age,var Address){
+    print('Name : $name\n'+ 'Age : $age\n'+'Address : $Address\n');
+  }
+
+
+//.....................//
+
+
+
+
+
+
+Classes Example : ...........
+
+
+void main( )
+{
+ 
+  var obj= School(); 
+  obj.name="Yougesh";
+  obj.Address="Karachi, Pakistan";
+  obj.age="20";
+  obj.batchcode="000122"; 
+  obj.fun(); 
+
+
+
+  var obj2= School(); 
+  obj2.name="Danish";
+  obj2.Address="Karachi, Pakistan";
+  obj2.age="24";
+  obj2.batchcode="000123"; 
+  obj2.fun(); 
+}
+
+class School{
+  var name,Address,age,batchcode; 
+  
+   fun(){   
+    print("Student Details : "); 
+    print('Name : $name');
+    print('Address :$Address');
+    print('Age : $age');
+    print('BatchCode : $batchcode\n');
+  }
+}
+
+//....................///
