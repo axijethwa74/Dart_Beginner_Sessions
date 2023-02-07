@@ -260,3 +260,94 @@ class Cal2 extends Cal {
 }
 
 
+//.............//
+Polymorphism & ingheritance : 
+
+
+
+class Animal {
+  void eat() {
+    print("Animal is eating");
+  }
+}
+
+class Dog extends Animal {
+  @override
+  void eat() {
+    print("Dog is eating");
+  }
+}
+
+void main() {
+  Animal animal = Animal();
+  animal.eat();
+
+  Dog dog = Dog();
+  dog.eat();
+}
+
+
+//.......// Example # 3
+
+
+class Vehicle {
+  void run() {
+    print("Vehicle is running");
+  }
+}
+
+class Bus extends Vehicle {
+  @override
+  void run() {
+    print("Bus is running");
+  }
+}
+
+void main() {
+  Vehicle vehicle = Vehicle();
+  vehicle.run();
+
+  Bus bus = Bus();
+  bus.run();
+}
+
+
+
+
+
+//...............// last example 
+
+void main(){
+
+Boy b = new Boy();  // Creating Object of Boy class  
+Girl g = new Girl();  // Creating Object of Girl class  
+  
+b.displayInfo();  
+g.displayInfo();  
+}
+
+abstract class Person {   
+void displayInfo();   
+  
+}  
+class Boy extends Person   
+{  
+// Overriding method  
+void displayInfo() {  
+    print("My name is Johnathon");  
+  
+       }  
+  
+}  
+  
+class Girl extends Person   
+{  
+// Overriding method  
+void displayInfo() {  
+    print("My name is Grecia");  
+  
+       }  
+  
+}  
+
+
