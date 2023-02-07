@@ -1,0 +1,262 @@
+Encapsulation : 1
+
+void main(){
+  var pkbank=Bank(); 
+  print(pkbank.getBalance()); 
+  
+  pkbank.setBalance(100);
+  print(pkbank.getBalance());
+}
+
+class Bank{
+
+  num? _Balance=0; 
+
+  num? getBalance(){
+    return _Balance; 
+  }
+  num? setBalance(int amount){
+    this._Balance= amount; 
+  }
+}
+
+
+
+///...................///
+
+Example # 2.....
+
+void main(){
+
+  var kia=Car();
+  kia.setName("KiaMotors MAxo");
+  kia.setId(1200,1234);
+
+  print("Print Car Name  ${kia.getName()}");
+  print("Print Car Model: ${kia.getId()}");
+ 
+}
+
+
+class Car{
+String? _Carname;
+int? _CarModel;
+int? _Carnumber;
+
+  String getName(){
+    return _Carname!;
+  }
+
+  int getId(){
+    return _CarModel!;
+    return _Carnumber!;
+   
+  }
+
+  void setName(String carname){
+    _Carname=carname;
+  }
+
+   void setId(int carmodel,int carnum){
+    this._CarModel=carmodel;
+    this._Carnumber=carnum;
+  }
+
+ 
+ 
+}
+
+
+///............///
+
+Example #3 ; 
+
+void main() {
+
+var pkBank= BankAccount(); 
+pkBank.setName("HBL Limited Pakistan");
+pkBank.setBankBalance(1000);
+
+  print("BANK NAME : ${pkBank.getBankname()}");
+  print("BANK BALNACE : ${pkBank.getBankBalance()}");
+}
+
+class BankAccount{
+
+  String? _Bankname; 
+  int? _bankBalance; 
+
+  int getBankBalance(){
+    return _bankBalance!; 
+  }
+
+  String getBankname(){
+    return _Bankname!; 
+  }
+
+  void setName(String name){
+    this._Bankname = name; 
+  }
+
+  void setBankBalance(int balance){
+    this._bankBalance = balance; 
+  }
+}
+
+
+
+//..............///
+
+
+Inheritances : Example 1
+
+void main(){
+
+var Per=Person();
+Per.speak();
+Per.walk();
+Per.speaking();
+Per.Writing();
+  
+}
+
+
+class Human{
+   void walk(){
+      print("Humans walk!");
+   }
+  void speaking(){
+    print("Speaking");
+  }
+  void Writing(){
+    print("Writing");
+  }
+}
+
+
+// inherting the parent class i.e Human
+class Person extends Human{
+   void speak(){
+      print("That person can speak");
+   }
+}
+
+
+///..............///
+
+Example # 2 
+
+class Bird{    
+      void fly()  
+         {  
+            print("The bird can fly");  
+          }  
+   }    
+      // Inherits the super class  
+class Parrot extends Bird{    
+         void speak(){  
+             print("The parrot can speak");  
+                 }  
+             
+}  
+   
+// Inherits the Parror base class  
+class Eagle extends Parrot {  
+          void vision(){  
+             print("The eagle has a sharp vision");  
+                 }  
+}  
+void main() {  
+      // Creating object of the child class  
+      Eagle e=new Eagle();    
+      e.speak();    
+      e.fly();    
+      e.vision();  
+}   
+
+
+///..................///
+
+
+Example # 3 
+
+void main() {  
+      // Creating Object of James class  
+      James j = new James();  
+      j.dispName("James");  
+      j.dispAge(24);  
+      j.result("Passed\n");  
+  
+    // Creating Object of Peter class  
+      Peter p = new Peter();  
+      p.dispName("Peter");  
+      p.dispAge(21);  
+      p.dispBranch("Computer Science");  
+
+  
+}  
+
+
+class Person {  
+  void dispName(String name) {  
+    print(name);  
+  }  
+  
+  void dispAge(int age) {  
+    print(age);  
+  }  
+}  
+  
+class Peter extends Person {  
+   
+  void dispBranch(String Branch) {  
+    print(Branch);  
+  }  
+}  
+  
+class James extends Person {  
+          void result(String result){  
+              print(result);  
+}  
+}  
+
+
+//..............//
+
+Inheritance Calculation exp  : 4.....
+
+
+void main(){
+
+  var c= Cal2();
+  c.display();
+  c.Add(10,20);
+  c.Sub(10,5);
+  
+  
+}
+
+
+class Cal{
+
+  void Add(int a, int b){
+    int c=a+b; 
+    print(c); 
+    
+  }
+
+  void Sub(int a, int b){
+    int c=a-b; 
+    print(c); 
+    
+  }
+  
+}
+
+class Cal2 extends Cal {
+  void display(){
+    print("Calculations");
+  }
+}
+
+
